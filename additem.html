@@ -20,36 +20,38 @@
         
      <!-- Body -->
     <body>
-        <h1>Project Form</h1>
-        <form action="#" method="post">
+        <h1>Add Guitar</h1>
+        <form action="#" method="post"> <!-- form -->
             <fieldset>
-                <legend>info</legend>
+                <legend>Guitar Purchase Details</legend>
                 <ul>
-                    <li><label for="firstItem">First Item:</label><input type="text" id="firstItem" /></li>
-                    <li><label for="accCode">Access Code:</label><input type="pass" id="accCode" /></li>
-                    <li><label for="confirmCode">Confirm Code[disabled]:</label><input type="pass" id="confirmCode" disabled /></li>
-                    <li><label for="email">Email:</label><input type="email" id="email" placeholder="myemail@email.com" /></li>
-                     <li><label for="url"> Default Website:</label><input type="url" placeholder="www.apple.com" /></li>
+                    <li><label for="Client">Client's Name:</label><input type="text" id="Client" /></li>
+                    <li><label for="Brand">Brand:</label><input type="text" id="Brand" /></li>
+                    <li><label for="skuNum">SKU Number:</label><input type="pass" id="skuNum" /></li>
+                    <li><label for="confirmSKU">Confirm SKU Number[disabled]:</label><input type="pass" id="confirmSKU" disabled /></li>
+                    <li><label for="date">Date of Purchase:</label><input type="date" id="date" /></li>
+                    <li><label for="email">Client's Email:</label><input type="email" id="email" placeholder="myemail@email.com" /></li>
+                     <li><label for="url"> Brand's Website:</label><input type="url" placeholder="www.brand.com" /></li>
                 </ul>
             </fieldset>
             <fieldset>
                 <legend>FAQ</legend>
                 <ul>
-                    <li>Most Visited:
+                    <li>Most Popular Brands:
                         <ul>
-                            <li><input type="checkbox" checked value="BC RICH" /><label for="BC RICH"BC Rich"</label></li>
+                            <li><input type="checkbox" checked value="BCRICH" id="BC Rich"/><label for="BCRICH">BCRich</label></li>
                             <li><input type="checkbox" value="IBANEZ" id="Ibanez"/><label for="IBANEZ">Ibanez</label></li>
                             <li><input type="checkbox" value="EPIPHONE" id="Epiphone"/><label for="EPIPHONE">Epiphone</label></li>
                             <li><input type="checkbox" value="MBONE" id="MbOne"/><label for="MBONE">MbOne</label></li>
                         </ul>
                     </li>
-                    <li>Blues or Metal?:
+                    <li>Cash or Credi?:
                         <ul>
-                            <li><input type="radio" checked value="Blues" id="blues" name="sex"/><label for="blues">Blues</label></li>
-                            <li><input type="radio" value="Metal" id="metal" name="sex"/><label for="metal">Metal</label></li>
-                            <li><input type="radio" checked value="Not a Musician" id="not a musician" name="sex"/><label for="not a musician">I dont know</label></li>
+                            <li><input type="radio"  value="Cash" id="cash"/><label for="cash">Cash</label></li>
+                            <li><input type="radio" value="Credit" id="credit"/><label for="credit">Credit</label></li>
                         </ul>
                     </li>
+                    <li><label for="Ranking">Rankin:</label><br /><input type="range" name="ranking" min="1" max ="10" /></li>
                     <li>
                         <label for="brand"> Favorite Brand </label>
                         <select id="brand">
@@ -64,21 +66,15 @@
                         </select>
                     </li>
                     <li><label for="feedback">Whats your favorite Brand of guitars?:</label><textarea id="feedback"></textarea></li>
-                    <li><input type="behindScene" value"true" /></li>
+                    <li><input type="hidden" value"true" /></li>
                 </ul>
             </fieldset>
-            <input type="Send" value="Entry sent" />
+            <input type="Enter" value="Send" />
         </form>
-        
-        
-        
-        
-        
-        
-    </body>
-    
-    
-    
-    
-    
+        <ul>
+			<li><a href="#">Show Data</a></li>
+			<li><a href="#">Clear Data</a></li>
+		</ul>
+        <body link="green" vlink="green">
+        </body>
 </html>
